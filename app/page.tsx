@@ -70,7 +70,7 @@ export default function Home() {
                 asChild
                 size='lg'
                 variant='outline'
-                className='border-white text-white hover:bg-white/10'
+                className='border-white text-black hover:bg-white/10'
               >
                 <Link href='/contact'>Свържете се с нас</Link>
               </Button>
