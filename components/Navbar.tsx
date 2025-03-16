@@ -60,7 +60,7 @@ export default function Navbar() {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white dark:bg-gray-800 shadow-md py-2'
+          ? 'bg-gray-800 shadow-md py-2'
           : 'bg-transparent dark:bg-gray-800/80 py-4'
       }`}
     >
