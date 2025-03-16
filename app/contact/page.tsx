@@ -52,7 +52,7 @@ export default function Contact() {
   return (
     <div className='min-h-screen pt-24 pb-16'>
       {/* Заглавие */}
-      <section className='bg-primary text-white py-16'>
+      <section className='bg-primary text-white py-16 dark:text-black'>
         <div className='container mx-auto px-4 text-center'>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
