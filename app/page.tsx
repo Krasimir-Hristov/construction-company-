@@ -62,15 +62,14 @@ export default function Home() {
               <Button
                 asChild
                 size='lg'
-                className='bg-primary hover:bg-primary/90'
+                className='bg-black text-white hover:bg-gray-400 hover:text-white'
               >
                 <Link href='/services'>Нашите услуги</Link>
               </Button>
               <Button
                 asChild
                 size='lg'
-                variant='outline'
-                className='border-white text-black dark:text-white hover:bg-white/10'
+                className='border-white text-black bg-white hover:bg-gray-400 hover:text-white'
               >
                 <Link href='/contact'>Свържете се с нас</Link>
               </Button>
@@ -80,7 +79,7 @@ export default function Home() {
       </section>
 
       {/* Представяне на компанията */}
-      <section className='py-20 bg-white dark:bg-gray-950'>
+      <section className='py-20 bg-white dark:bg-gray-950 '>
         <div className='container mx-auto px-4'>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
             <motion.div
@@ -103,7 +102,10 @@ export default function Home() {
                 най-съвременни технологии и материали, за да гарантираме
                 дълготрайност и устойчивост на всеки проект.
               </p>
-              <Button asChild>
+              <Button
+                asChild
+                className='bg-black text-white dark:text-black dark:bg-white hover:bg-gray-400 hover:text-white dark:hover:bg-gray-400 dark:hover:text-white'
+              >
                 <Link href='/about'>Научете повече за нас</Link>
               </Button>
             </motion.div>
@@ -262,7 +264,7 @@ export default function Home() {
             asChild
             size='lg'
             variant='outline'
-            className='border-white dark:border-black text-white dark:text-black hover:bg-white hover:text-primary'
+            className='bg-white text-black dark:text-white dark:bg-black hover:bg-gray-400 hover:text-white dark:hover:bg-gray-400 dark:hover:text-white'
           >
             <Link href='/contact'>Свържете се с нас</Link>
           </Button>
