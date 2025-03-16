@@ -170,7 +170,7 @@ export default function Services() {
   return (
     <div className='min-h-screen pt-24 pb-16'>
       {/* Заглавие */}
-      <section className='bg-primary text-white py-16'>
+      <section className='bg-primary text-white py-16 dark:text-black'>
         <div className='container mx-auto px-4 text-center'>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -247,7 +247,7 @@ export default function Services() {
             </motion.p>
           </div>
 
-          <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
+          <div className='grid grid-cols-1 md:grid-cols-4 gap-8 text-white dark:text-black'>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -255,7 +255,7 @@ export default function Services() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className='text-center'
             >
-              <div className='w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4 text-xl font-bold'>
+              <div className='w-16 h-16 rounded-full bg-primary  flex items-center justify-center mx-auto mb-4 text-xl font-bold'>
                 1
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
@@ -274,7 +274,7 @@ export default function Services() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className='text-center'
             >
-              <div className='w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4 text-xl font-bold'>
+              <div className='w-16 h-16 rounded-full bg-primary  flex items-center justify-center mx-auto mb-4 text-xl font-bold'>
                 2
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
@@ -293,7 +293,7 @@ export default function Services() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className='text-center'
             >
-              <div className='w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4 text-xl font-bold'>
+              <div className='w-16 h-16 rounded-full bg-primary  flex items-center justify-center mx-auto mb-4 text-xl font-bold'>
                 3
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
@@ -312,7 +312,7 @@ export default function Services() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className='text-center'
             >
-              <div className='w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center mx-auto mb-4 text-xl font-bold'>
+              <div className='w-16 h-16 rounded-full bg-primary  flex items-center justify-center mx-auto mb-4 text-xl font-bold'>
                 4
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
