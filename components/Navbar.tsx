@@ -60,8 +60,8 @@ export default function Navbar() {
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white dark:bg-gray-900 shadow-md py-2'
-          : 'bg-transparent py-4'
+          ? 'bg-white dark:bg-gray-800 shadow-md py-2'
+          : 'bg-transparent dark:bg-gray-800/80 py-4'
       }`}
     >
       <div className='container mx-auto px-4 flex justify-between items-center'>
@@ -129,7 +129,7 @@ export default function Navbar() {
         <div className='hidden md:flex items-center space-x-8'>
           <Link
             href='/'
-            className={`hover:text-primary transition-colors ${
+            className={`text-white dark:text-gray-100 hover:text-primary dark:hover:text-primary transition-colors ${
               isActive('/') ? 'text-primary font-medium' : ''
             }`}
           >
@@ -137,7 +137,7 @@ export default function Navbar() {
           </Link>
           <Link
             href='/about'
-            className={`hover:text-primary transition-colors ${
+            className={`text-white dark:text-gray-100 hover:text-primary dark:hover:text-primary transition-colors ${
               isActive('/about') ? 'text-primary font-medium' : ''
             }`}
           >
@@ -145,7 +145,7 @@ export default function Navbar() {
           </Link>
           <Link
             href='/services'
-            className={`hover:text-primary transition-colors ${
+            className={`text-white dark:text-gray-100 hover:text-primary dark:hover:text-primary transition-colors ${
               isActive('/services') ? 'text-primary font-medium' : ''
             }`}
           >
@@ -153,7 +153,7 @@ export default function Navbar() {
           </Link>
           <Link
             href='/contact'
-            className={`hover:text-primary transition-colors ${
+            className={`text-white dark:text-gray-100 hover:text-primary dark:hover:text-primary transition-colors ${
               isActive('/contact') ? 'text-primary font-medium' : ''
             }`}
           >
@@ -166,7 +166,7 @@ export default function Navbar() {
           variant='ghost'
           size='icon'
           onClick={toggleTheme}
-          className='ml-4'
+          className='ml-4 text-gray-800 dark:text-gray-100'
         >
           {theme === 'light' ? (
             <Moon className='h-5 w-5' />
