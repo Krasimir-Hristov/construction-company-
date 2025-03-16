@@ -249,7 +249,7 @@ export default function Home() {
       </section>
 
       {/* Призив за действие */}
-      <section className='py-16 bg-primary text-white'>
+      <section className='py-16 bg-primary text-white dark:text-black'>
         <div className='container mx-auto px-4 text-center'>
           <h2 className='text-3xl font-bold mb-6'>
             Готови ли сте да започнем вашия проект?
@@ -262,7 +262,7 @@ export default function Home() {
             asChild
             size='lg'
             variant='outline'
-            className='border-white text-white hover:bg-white hover:text-primary'
+            className='border-white dark:border-black text-white dark:text-black hover:bg-white hover:text-primary'
           >
             <Link href='/contact'>Свържете се с нас</Link>
           </Button>
