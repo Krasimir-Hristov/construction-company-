@@ -74,7 +74,7 @@ export default function Navbar() {
               <Button
                 variant='outline'
                 size='icon'
-                className='border-gray-600 text-gray-100'
+                className='border-gray-600 bg-white text-black dark:bg-gray-700 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-600'
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -93,50 +93,65 @@ export default function Navbar() {
                 </svg>
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align='end'>
-              <DropdownMenuItem asChild>
+            <DropdownMenuContent
+              align='end'
+              className='bg-white  dark:bg-gray-800 border-gray-300 dark:border-gray-700'
+            >
+              <DropdownMenuItem
+                asChild
+                className='focus:bg-gray-100 dark:focus:bg-gray-700'
+              >
                 <Link
                   href='/'
                   className={`w-full ${
                     isActive('/')
-                      ? 'bg-primary/30 text-white font-bold'
-                      : 'text-gray-200'
+                      ? 'bg-primary/10 text-black font-bold dark:bg-primary/30 dark:text-white'
+                      : 'text-gray-800 dark:text-gray-200'
                   }`}
                 >
                   Startseite
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
+              <DropdownMenuItem
+                asChild
+                className='focus:bg-gray-100 dark:focus:bg-gray-700'
+              >
                 <Link
                   href='/about'
                   className={`w-full ${
                     isActive('/about')
-                      ? 'bg-primary/30 text-white font-bold'
-                      : 'text-gray-200'
+                      ? 'bg-primary/10 text-black font-bold dark:bg-primary/30 dark:text-white'
+                      : 'text-gray-800 dark:text-gray-200'
                   }`}
                 >
                   Über uns
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
+              <DropdownMenuItem
+                asChild
+                className='focus:bg-gray-100 dark:focus:bg-gray-700'
+              >
                 <Link
                   href='/services'
                   className={`w-full ${
                     isActive('/services')
-                      ? 'bg-primary/30 text-white font-bold'
-                      : 'text-gray-200'
+                      ? 'bg-primary/10 text-black font-bold dark:bg-primary/30 dark:text-white'
+                      : 'text-gray-800 dark:text-gray-200'
                   }`}
                 >
                   Leistungen
                 </Link>
               </DropdownMenuItem>
-              <DropdownMenuItem asChild>
+              <DropdownMenuItem
+                asChild
+                className='focus:bg-gray-100 dark:focus:bg-gray-700'
+              >
                 <Link
                   href='/contact'
                   className={`w-full ${
                     isActive('/contact')
-                      ? 'bg-primary/30 text-white font-bold'
-                      : 'text-gray-200'
+                      ? 'bg-primary/10 text-black font-bold dark:bg-primary/30 dark:text-white'
+                      : 'text-gray-800 dark:text-gray-200'
                   }`}
                 >
                   Kontakt
@@ -195,7 +210,7 @@ export default function Navbar() {
           variant='ghost'
           size='icon'
           onClick={toggleTheme}
-          className='ml-4 text-gray-100'
+          className='ml-4 text-gray-100 hover:bg-gray-700'
         >
           {theme === 'light' ? (
             <Moon className='h-5 w-5' />
