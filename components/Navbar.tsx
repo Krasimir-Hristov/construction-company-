@@ -59,13 +59,11 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-gray-800 shadow-md py-2'
-          : 'bg-transparent dark:bg-gray-800/80 py-4'
+        isScrolled ? 'bg-gray-800 shadow-md py-2' : 'bg-gray-800/80 py-4'
       }`}
     >
       <div className='container mx-auto px-4 flex justify-between items-center'>
-        <Link href='/' className='text-2xl font-bold text-primary'>
+        <Link href='/' className='text-2xl font-bold text-white'>
           СтроиТех
         </Link>
 
@@ -73,7 +71,11 @@ export default function Navbar() {
         <div className='md:hidden'>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant='outline' size='icon'>
+              <Button
+                variant='outline'
+                size='icon'
+                className='border-gray-600 text-gray-100'
+              >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='24'
@@ -93,14 +95,25 @@ export default function Navbar() {
             </DropdownMenuTrigger>
             <DropdownMenuContent align='end'>
               <DropdownMenuItem asChild>
-                <Link href='/' className={isActive('/') ? 'text-primary' : ''}>
+                <Link
+                  href='/'
+                  className={`w-full ${
+                    isActive('/')
+                      ? 'bg-primary/30 text-white font-bold'
+                      : 'text-gray-200'
+                  }`}
+                >
                   Начало
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link
                   href='/about'
-                  className={isActive('/about') ? 'text-primary' : ''}
+                  className={`w-full ${
+                    isActive('/about')
+                      ? 'bg-primary/30 text-white font-bold'
+                      : 'text-gray-200'
+                  }`}
                 >
                   За нас
                 </Link>
@@ -108,7 +121,11 @@ export default function Navbar() {
               <DropdownMenuItem asChild>
                 <Link
                   href='/services'
-                  className={isActive('/services') ? 'text-primary' : ''}
+                  className={`w-full ${
+                    isActive('/services')
+                      ? 'bg-primary/30 text-white font-bold'
+                      : 'text-gray-200'
+                  }`}
                 >
                   Услуги
                 </Link>
@@ -116,7 +133,11 @@ export default function Navbar() {
               <DropdownMenuItem asChild>
                 <Link
                   href='/contact'
-                  className={isActive('/contact') ? 'text-primary' : ''}
+                  className={`w-full ${
+                    isActive('/contact')
+                      ? 'bg-primary/30 text-white font-bold'
+                      : 'text-gray-200'
+                  }`}
                 >
                   Контакти
                 </Link>
@@ -129,32 +150,40 @@ export default function Navbar() {
         <div className='hidden md:flex items-center space-x-8'>
           <Link
             href='/'
-            className={`text-white dark:text-gray-100 hover:text-primary dark:hover:text-primary transition-colors ${
-              isActive('/') ? 'text-primary font-medium' : ''
+            className={`transition-colors relative py-2 ${
+              isActive('/')
+                ? 'text-white font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-white'
+                : 'text-gray-300 hover:text-white'
             }`}
           >
             Начало
           </Link>
           <Link
             href='/about'
-            className={`text-white dark:text-gray-100 hover:text-primary dark:hover:text-primary transition-colors ${
-              isActive('/about') ? 'text-primary font-medium' : ''
+            className={`transition-colors relative py-2 ${
+              isActive('/about')
+                ? 'text-white font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-white'
+                : 'text-gray-300 hover:text-white'
             }`}
           >
             За нас
           </Link>
           <Link
             href='/services'
-            className={`text-white dark:text-gray-100 hover:text-primary dark:hover:text-primary transition-colors ${
-              isActive('/services') ? 'text-primary font-medium' : ''
+            className={`transition-colors relative py-2 ${
+              isActive('/services')
+                ? 'text-white font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-white'
+                : 'text-gray-300 hover:text-white'
             }`}
           >
             Услуги
           </Link>
           <Link
             href='/contact'
-            className={`text-white dark:text-gray-100 hover:text-primary dark:hover:text-primary transition-colors ${
-              isActive('/contact') ? 'text-primary font-medium' : ''
+            className={`transition-colors relative py-2 ${
+              isActive('/contact')
+                ? 'text-white font-bold after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-white'
+                : 'text-gray-300 hover:text-white'
             }`}
           >
             Контакти
@@ -166,7 +195,7 @@ export default function Navbar() {
           variant='ghost'
           size='icon'
           onClick={toggleTheme}
-          className='ml-4 text-gray-800 dark:text-gray-100'
+          className='ml-4 text-gray-100'
         >
           {theme === 'light' ? (
             <Moon className='h-5 w-5' />
