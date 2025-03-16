@@ -60,7 +60,7 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             className='text-4xl md:text-5xl font-bold mb-4'
           >
-            Свържете се с нас
+            Kontakt
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -68,8 +68,7 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className='text-xl max-w-3xl mx-auto'
           >
-            Имате въпроси или искате да обсъдите вашия проект? Свържете се с нас
-            днес!
+            Wir freuen uns, von Ihnen zu hören
           </motion.p>
         </div>
       </section>
@@ -85,7 +84,7 @@ export default function Contact() {
               transition={{ duration: 0.8 }}
             >
               <h2 className='text-3xl font-bold mb-8 text-gray-900 dark:text-white'>
-                Контактна информация
+                Kontaktinformationen
               </h2>
 
               <div className='space-y-8'>
@@ -110,13 +109,9 @@ export default function Contact() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className='text-lg font-semibold mb-2'>Адрес</h3>
+                        <h3 className='text-lg font-semibold mb-2'>Adresse</h3>
                         <p className='text-gray-700 dark:text-gray-300'>
-                          ул. Строителна 123
-                          <br />
-                          София 1000
-                          <br />
-                          България
+                          Baustraße 123, 10115 Berlin
                         </p>
                       </div>
                     </div>
@@ -143,11 +138,9 @@ export default function Contact() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className='text-lg font-semibold mb-2'>Телефон</h3>
+                        <h3 className='text-lg font-semibold mb-2'>Telefon</h3>
                         <p className='text-gray-700 dark:text-gray-300'>
-                          +359 888 123 456
-                          <br />
-                          +359 2 987 6543
+                          +49 30 1234567
                         </p>
                       </div>
                     </div>
@@ -175,11 +168,9 @@ export default function Contact() {
                         </svg>
                       </div>
                       <div>
-                        <h3 className='text-lg font-semibold mb-2'>Имейл</h3>
+                        <h3 className='text-lg font-semibold mb-2'>E-Mail</h3>
                         <p className='text-gray-700 dark:text-gray-300'>
-                          info@stroitech.bg
-                          <br />
-                          office@stroitech.bg
+                          info@bautech.de
                         </p>
                       </div>
                     </div>
@@ -208,14 +199,14 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className='text-lg font-semibold mb-2'>
-                          Работно време
+                          Öffnungszeiten
                         </h3>
                         <p className='text-gray-700 dark:text-gray-300'>
-                          Понеделник - Петък: 9:00 - 18:00
+                          Montag - Freitag: 9:00 - 18:00 Uhr
                           <br />
-                          Събота: 10:00 - 14:00
+                          Samstag: 10:00 - 14:00 Uhr
                           <br />
-                          Неделя: Затворено
+                          Sonntag: Geschlossen
                         </p>
                       </div>
                     </div>
@@ -231,7 +222,7 @@ export default function Contact() {
               transition={{ duration: 0.8 }}
             >
               <h2 className='text-3xl font-bold mb-8 text-gray-900 dark:text-white'>
-                Изпратете ни съобщение
+                Schreiben Sie uns
               </h2>
 
               <Card>
@@ -239,34 +230,33 @@ export default function Contact() {
                   {isSubmitted ? (
                     <div className='bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 p-4 rounded-md mb-6'>
                       <p className='font-medium'>
-                        Благодарим ви за съобщението! Ще се свържем с вас
-                        възможно най-скоро.
+                        Vielen Dank für Ihre Nachricht!
                       </p>
                     </div>
                   ) : (
                     <form onSubmit={handleSubmit} className='space-y-6'>
                       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div className='space-y-2'>
-                          <Label htmlFor='name'>Име</Label>
+                          <Label htmlFor='name'>Name</Label>
                           <Input
                             id='name'
                             name='name'
                             value={formData.name}
                             onChange={handleChange}
-                            placeholder='Вашето име'
+                            placeholder='Ihr Name'
                             required
                           />
                         </div>
 
                         <div className='space-y-2'>
-                          <Label htmlFor='email'>Имейл</Label>
+                          <Label htmlFor='email'>E-Mail</Label>
                           <Input
                             id='email'
                             name='email'
                             type='email'
                             value={formData.email}
                             onChange={handleChange}
-                            placeholder='вашият@имейл.com'
+                            placeholder='ihre-email@beispiel.de'
                             required
                           />
                         </div>
@@ -274,37 +264,37 @@ export default function Contact() {
 
                       <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div className='space-y-2'>
-                          <Label htmlFor='phone'>Телефон</Label>
+                          <Label htmlFor='phone'>Telefon</Label>
                           <Input
                             id='phone'
                             name='phone'
                             value={formData.phone}
                             onChange={handleChange}
-                            placeholder='Вашият телефонен номер'
+                            placeholder='+49 123 456789'
                           />
                         </div>
 
                         <div className='space-y-2'>
-                          <Label htmlFor='subject'>Тема</Label>
+                          <Label htmlFor='subject'>Betreff</Label>
                           <Input
                             id='subject'
                             name='subject'
                             value={formData.subject}
                             onChange={handleChange}
-                            placeholder='Тема на съобщението'
+                            placeholder='Betreff Ihrer Nachricht'
                             required
                           />
                         </div>
                       </div>
 
                       <div className='space-y-2'>
-                        <Label htmlFor='message'>Съобщение</Label>
+                        <Label htmlFor='message'>Nachricht</Label>
                         <textarea
                           id='message'
                           name='message'
                           value={formData.message}
                           onChange={handleChange}
-                          placeholder='Вашето съобщение'
+                          placeholder='Ihre Nachricht'
                           className='w-full min-h-[150px] rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'
                           required
                         />
@@ -315,7 +305,9 @@ export default function Contact() {
                         className='w-full'
                         disabled={isSubmitting}
                       >
-                        {isSubmitting ? 'Изпращане...' : 'Изпрати съобщение'}
+                        {isSubmitting
+                          ? 'Nachricht senden...'
+                          : 'Nachricht senden'}
                       </Button>
                     </form>
                   )}
@@ -331,10 +323,10 @@ export default function Contact() {
         <div className='container mx-auto px-4'>
           <div className='text-center mb-12'>
             <h2 className='text-3xl font-bold mb-4 text-gray-900 dark:text-white'>
-              Нашето местоположение
+              Besuchen Sie uns
             </h2>
             <p className='text-gray-700 dark:text-gray-300 max-w-2xl mx-auto'>
-              Посетете ни на адрес: ул. Строителна 123, София 1000
+              Wir sind zentral gelegen und leicht zu erreichen
             </p>
           </div>
 
@@ -342,7 +334,7 @@ export default function Contact() {
             {/* Тук би трябвало да има карта, но използваме placeholder изображение */}
             <div className='absolute inset-0 bg-gray-300 dark:bg-gray-700 flex items-center justify-center'>
               <p className='text-gray-600 dark:text-gray-300 text-lg font-medium'>
-                Карта на местоположението
+                Hier wird eine interaktive Karte angezeigt
               </p>
             </div>
           </div>

@@ -15,7 +15,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className='text-4xl md:text-5xl font-bold mb-4'
           >
-            За СтроиТех
+            Über BauTech
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className='text-xl max-w-3xl mx-auto'
           >
-            Вашият надежден партньор в строителството от 2008 година
+            Ihr zuverlässiger Partner im Bauwesen seit 2008
           </motion.p>
         </div>
       </section>
@@ -38,24 +38,24 @@ export default function About() {
               transition={{ duration: 0.8 }}
             >
               <h2 className='text-3xl font-bold mb-6 text-gray-900 dark:text-white'>
-                Нашата история
+                Unsere Geschichte
               </h2>
               <p className='text-gray-700 dark:text-gray-300 mb-4'>
-                СтроиТех е основана през 2008 година от група опитни строителни
-                инженери с визия да създадат компания, която предлага
-                висококачествени строителни услуги с фокус върху иновациите и
-                устойчивостта.
+                BauTech wurde 2008 von einer Gruppe erfahrener Bauingenieure
+                gegründet, mit der Vision, ein Unternehmen zu schaffen, das
+                hochwertige Bauleistungen mit Fokus auf Innovation und
+                Nachhaltigkeit anbietet.
               </p>
               <p className='text-gray-700 dark:text-gray-300 mb-4'>
-                През годините се разраснахме от малка фирма с няколко служители
-                до водеща строителна компания с екип от над 100 професионалисти,
-                включително инженери, архитекти, проектанти и квалифицирани
-                строителни работници.
+                Im Laufe der Jahre sind wir von einem kleinen Unternehmen mit
+                wenigen Mitarbeitern zu einem führenden Bauunternehmen mit einem
+                Team von über 100 Fachleuten gewachsen, darunter Ingenieure,
+                Architekten, Designer und qualifizierte Bauarbeiter.
               </p>
               <p className='text-gray-700 dark:text-gray-300'>
-                Днес СтроиТех е синоним на качество, надеждност и иновации в
-                строителния бранш, с портфолио от успешно завършени проекти в
-                цялата страна.
+                Heute steht BauTech für Qualität, Zuverlässigkeit und Innovation
+                in der Baubranche, mit einem Portfolio erfolgreich
+                abgeschlossener Projekte im ganzen Land.
               </p>
             </motion.div>
 
@@ -67,7 +67,7 @@ export default function About() {
             >
               <Image
                 src='/images/placeholder.jpg'
-                alt='Офис на СтроиТех'
+                alt='BauTech Büro'
                 fill
                 style={{ objectFit: 'cover' }}
               />
@@ -88,18 +88,18 @@ export default function About() {
               className='bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md'
             >
               <h3 className='text-2xl font-bold mb-4 text-primary'>
-                Нашата мисия
+                Unsere Mission
               </h3>
               <p className='text-gray-700 dark:text-gray-300'>
-                Мисията на СтроиТех е да предоставя висококачествени строителни
-                услуги, които надминават очакванията на клиентите, като
-                същевременно спазваме най-високите стандарти за безопасност,
-                устойчивост и етика в работата си.
+                Die Mission von BauTech ist es, hochwertige Bauleistungen zu
+                erbringen, die die Erwartungen der Kunden übertreffen, während
+                wir die höchsten Standards für Sicherheit, Nachhaltigkeit und
+                Ethik in unserer Arbeit einhalten.
               </p>
               <p className='text-gray-700 dark:text-gray-300 mt-4'>
-                Стремим се да изграждаме не просто сгради, а пространства, които
-                подобряват качеството на живот и работа на хората, които ги
-                обитават.
+                Wir streben danach, nicht nur Gebäude zu errichten, sondern
+                Räume zu schaffen, die die Lebens- und Arbeitsqualität der
+                Menschen, die sie bewohnen, verbessern.
               </p>
             </motion.div>
 
@@ -111,18 +111,20 @@ export default function About() {
               className='bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md'
             >
               <h3 className='text-2xl font-bold mb-4 text-primary'>
-                Нашата визия
+                Unsere Vision
               </h3>
               <p className='text-gray-700 dark:text-gray-300'>
-                Визията ни е да бъдем лидер в строителната индустрия, признат за
-                иновативност, качество и устойчивост. Стремим се да въвеждаме
-                нови технологии и практики, които намаляват въздействието върху
-                околната среда и повишават ефективността на строителния процес.
+                Unsere Vision ist es, ein führendes Unternehmen in der
+                Bauindustrie zu sein, das für Innovation, Qualität und
+                Nachhaltigkeit anerkannt ist. Wir streben danach, neue
+                Technologien und Praktiken einzuführen, die die
+                Umweltauswirkungen reduzieren und die Effizienz des Bauprozesses
+                erhöhen.
               </p>
               <p className='text-gray-700 dark:text-gray-300 mt-4'>
-                Искаме да бъдем предпочитан партньор за клиенти, които ценят
-                качеството, надеждността и отговорното отношение към околната
-                среда.
+                Wir möchten der bevorzugte Partner für Kunden sein, die
+                Qualität, Zuverlässigkeit und verantwortungsvolles
+                Umweltbewusstsein schätzen.
               </p>
             </motion.div>
           </div>
@@ -139,7 +141,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
             className='text-3xl font-bold mb-12 text-center text-gray-900 dark:text-white'
           >
-            Нашите ценности
+            Unsere Werte
           </motion.h2>
 
           <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
@@ -167,11 +169,11 @@ export default function About() {
                 </svg>
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
-                Качество
+                Qualität
               </h3>
               <p className='text-gray-700 dark:text-gray-300'>
-                Стремим се към съвършенство във всеки аспект на нашата работа,
-                от планирането до изпълнението и поддръжката.
+                Wir streben nach Exzellenz in jedem Aspekt unserer Arbeit, von
+                der Planung bis zur Ausführung und Wartung.
               </p>
             </motion.div>
 
@@ -200,11 +202,11 @@ export default function About() {
                 </svg>
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
-                Иновации
+                Innovation
               </h3>
               <p className='text-gray-700 dark:text-gray-300'>
-                Непрекъснато търсим нови технологии и методи, които да подобрят
-                нашите строителни процеси и крайни резултати.
+                Wir suchen ständig nach neuen Technologien und Methoden, um
+                unsere Bauprozesse und Endergebnisse zu verbessern.
               </p>
             </motion.div>
 
@@ -234,12 +236,11 @@ export default function About() {
                 </svg>
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
-                Устойчивост
+                Nachhaltigkeit
               </h3>
               <p className='text-gray-700 dark:text-gray-300'>
-                Ангажирани сме с устойчиви строителни практики, които
-                минимизират въздействието върху околната среда и създават
-                здравословни пространства.
+                Wir sind nachhaltigem Bauen verpflichtet, das die
+                Umweltauswirkungen minimiert und gesunde Räume schafft.
               </p>
             </motion.div>
           </div>

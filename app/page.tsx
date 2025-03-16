@@ -36,7 +36,7 @@ export default function Home() {
         <div className='absolute inset-0 z-0'>
           <Image
             src='/images/placeholder.jpg'
-            alt='Строителна компания'
+            alt='Bauunternehmen'
             fill
             style={{ objectFit: 'cover' }}
             priority
@@ -52,11 +52,12 @@ export default function Home() {
             className='max-w-3xl'
           >
             <h1 className='text-4xl md:text-6xl font-bold mb-6'>
-              Изграждаме бъдещето с качество и прецизност
+              Wir bauen die Zukunft mit Qualität und Präzision
             </h1>
             <p className='text-xl mb-8 text-gray-200'>
-              СтроиТех е вашият надежден партньор за всички видове строителни
-              проекти - от малки ремонти до мащабни строителни обекти.
+              BauTech ist Ihr zuverlässiger Partner für alle Arten von
+              Bauprojekten - von kleinen Renovierungen bis hin zu großen
+              Bauvorhaben.
             </p>
             <div className='flex flex-col sm:flex-row gap-4'>
               <Button
@@ -64,14 +65,14 @@ export default function Home() {
                 size='lg'
                 className='bg-black text-white hover:bg-gray-400 hover:text-white'
               >
-                <Link href='/services'>Нашите услуги</Link>
+                <Link href='/services'>Unsere Leistungen</Link>
               </Button>
               <Button
                 asChild
                 size='lg'
                 className='border-white text-black bg-white hover:bg-gray-400 hover:text-white'
               >
-                <Link href='/contact'>Свържете се с нас</Link>
+                <Link href='/contact'>Kontaktieren Sie uns</Link>
               </Button>
             </div>
           </motion.div>
@@ -89,24 +90,24 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <h2 className='text-3xl font-bold mb-6 text-gray-900 dark:text-white'>
-                За СтроиТех
+                Über BauTech
               </h2>
               <p className='text-gray-700 dark:text-gray-300 mb-4'>
-                С над 15 години опит в строителния бранш, СтроиТех се утвърди
-                като лидер на пазара, предлагащ висококачествени строителни
-                услуги за жилищни, търговски и индустриални проекти.
+                Mit über 15 Jahren Erfahrung in der Baubranche hat sich BauTech
+                als Marktführer etabliert, der hochwertige Bauleistungen für
+                Wohn-, Gewerbe- und Industrieprojekte anbietet.
               </p>
               <p className='text-gray-700 dark:text-gray-300 mb-6'>
-                Нашият екип от опитни професионалисти е отдаден на качеството,
-                безопасността и удовлетвореността на клиентите. Използваме
-                най-съвременни технологии и материали, за да гарантираме
-                дълготрайност и устойчивост на всеки проект.
+                Unser Team aus erfahrenen Fachleuten ist der Qualität,
+                Sicherheit und Kundenzufriedenheit verpflichtet. Wir verwenden
+                modernste Technologien und Materialien, um die Langlebigkeit und
+                Nachhaltigkeit jedes Projekts zu gewährleisten.
               </p>
               <Button
                 asChild
                 className='bg-black text-white dark:text-black dark:bg-white hover:bg-gray-400 hover:text-white dark:hover:bg-gray-400 dark:hover:text-white'
               >
-                <Link href='/about'>Научете повече за нас</Link>
+                <Link href='/about'>Erfahren Sie mehr über uns</Link>
               </Button>
             </motion.div>
 
@@ -119,7 +120,7 @@ export default function Home() {
             >
               <Image
                 src='/images/placeholder.jpg'
-                alt='Строителна компания'
+                alt='Bauunternehmen'
                 fill
                 style={{ objectFit: 'cover' }}
               />
@@ -128,16 +129,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Анимирана секция с функции */}
+      {/* Анимирана секция с Funktionen */}
       <section className='py-20 bg-gray-100 dark:bg-gray-900'>
         <div className='container mx-auto px-4'>
           <div className='text-center mb-16'>
             <h2 className='text-3xl font-bold mb-4 text-gray-900 dark:text-white'>
-              Защо да изберете нас?
+              Warum uns wählen?
             </h2>
             <p className='text-gray-700 dark:text-gray-300 max-w-2xl mx-auto'>
-              Предлагаме комплексни строителни решения, съобразени с вашите
-              нужди и бюджет. Ето защо клиентите ни се доверяват:
+              Wir bieten umfassende Baulösungen, die auf Ihre Bedürfnisse und
+              Ihr Budget zugeschnitten sind. Hier sind die Gründe, warum unsere
+              Kunden uns vertrauen:
             </p>
           </div>
 
@@ -168,13 +170,12 @@ export default function Home() {
                       <path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10' />
                     </svg>
                   </div>
-                  <CardTitle>Качество и надеждност</CardTitle>
+                  <CardTitle>Qualität und Zuverlässigkeit</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className='text-gray-700 dark:text-gray-300'>
-                    Използваме само висококачествени материали и прилагаме
-                    строги стандарти за качество във всеки етап от строителния
-                    процес.
+                    Wir verwenden nur hochwertige Materialien und wenden strenge
+                    Qualitätsstandards in jeder Phase des Bauprozesses an.
                   </p>
                 </CardContent>
               </Card>
@@ -201,12 +202,13 @@ export default function Home() {
                       <polyline points='12 6 12 12 16 14' />
                     </svg>
                   </div>
-                  <CardTitle>Спазване на сроковете</CardTitle>
+                  <CardTitle>Termintreue</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className='text-gray-700 dark:text-gray-300'>
-                    Разбираме важността на времето и се ангажираме да завършим
-                    всеки проект в договорения срок, без компромис с качеството.
+                    Wir verstehen die Bedeutung von Zeit und verpflichten uns,
+                    jedes Projekt innerhalb des vereinbarten Zeitrahmens
+                    abzuschließen, ohne Kompromisse bei der Qualität einzugehen.
                   </p>
                 </CardContent>
               </Card>
@@ -235,13 +237,13 @@ export default function Home() {
                       <path d='M16 3.13a4 4 0 0 1 0 7.75' />
                     </svg>
                   </div>
-                  <CardTitle>Опитен екип</CardTitle>
+                  <CardTitle>Erfahrenes Team</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className='text-gray-700 dark:text-gray-300'>
-                    Нашият екип от висококвалифицирани специалисти има
-                    дългогодишен опит в различни аспекти на строителството и
-                    непрекъснато се усъвършенства.
+                    Unser Team aus hochqualifizierten Fachleuten verfügt über
+                    langjährige Erfahrung in verschiedenen Aspekten des
+                    Bauwesens und bildet sich ständig weiter.
                   </p>
                 </CardContent>
               </Card>
@@ -250,15 +252,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Призив за действие */}
+      {/* Призив für Handlung */}
       <section className='py-16 bg-primary text-white dark:text-black'>
         <div className='container mx-auto px-4 text-center'>
           <h2 className='text-3xl font-bold mb-6'>
-            Готови ли сте да започнем вашия проект?
+            Sind Sie bereit, Ihr Projekt zu starten?
           </h2>
           <p className='text-xl mb-8 max-w-2xl mx-auto'>
-            Свържете се с нас днес за безплатна консултация и оферта за вашия
-            строителен проект.
+            Kontaktieren Sie uns noch heute für eine kostenlose Beratung und ein
+            Angebot für Ihr Bauprojekt.
           </p>
           <Button
             asChild
@@ -266,7 +268,7 @@ export default function Home() {
             variant='outline'
             className='bg-white text-black dark:text-white dark:bg-black hover:bg-gray-400 hover:text-white dark:hover:bg-gray-400 dark:hover:text-white'
           >
-            <Link href='/contact'>Свържете се с нас</Link>
+            <Link href='/contact'>Kontaktieren Sie uns</Link>
           </Button>
         </div>
       </section>

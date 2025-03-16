@@ -8,24 +8,24 @@ export default function Footer() {
           {/* Лого и описание */}
           <div className='col-span-1 md:col-span-2'>
             <Link href='/' className='text-2xl font-bold text-primary'>
-              СтроиТех
+              BauTech
             </Link>
             <p className='mt-4 text-gray-600 dark:text-gray-400'>
-              Вашият надежден партньор в строителството. Предлагаме качествени
-              строителни услуги с внимание към детайла и спазване на сроковете.
+              Ihr zuverlässiger Partner im Bauwesen. Wir bieten hochwertige
+              Bauleistungen mit Liebe zum Detail und Termintreue.
             </p>
           </div>
 
           {/* Бързи връзки */}
           <div>
-            <h3 className='text-lg font-semibold mb-4'>Бързи връзки</h3>
+            <h3 className='text-lg font-semibold mb-4'>Schnelllinks</h3>
             <ul className='space-y-2'>
               <li>
                 <Link
                   href='/'
                   className='text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors'
                 >
-                  Начало
+                  Startseite
                 </Link>
               </li>
               <li>
@@ -33,7 +33,7 @@ export default function Footer() {
                   href='/about'
                   className='text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors'
                 >
-                  За нас
+                  Über uns
                 </Link>
               </li>
               <li>
@@ -41,7 +41,7 @@ export default function Footer() {
                   href='/services'
                   className='text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors'
                 >
-                  Услуги
+                  Leistungen
                 </Link>
               </li>
               <li>
@@ -49,7 +49,7 @@ export default function Footer() {
                   href='/contact'
                   className='text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors'
                 >
-                  Контакти
+                  Kontakt
                 </Link>
               </li>
             </ul>
@@ -57,17 +57,17 @@ export default function Footer() {
 
           {/* Контакти */}
           <div>
-            <h3 className='text-lg font-semibold mb-4'>Контакти</h3>
+            <h3 className='text-lg font-semibold mb-4'>Kontakt</h3>
             <ul className='space-y-2'>
               <li className='text-gray-600 dark:text-gray-400'>
-                <span className='font-medium'>Адрес:</span> ул. Строителна 123,
-                София
+                <span className='font-medium'>Adresse:</span> Baustraße 123,
+                Berlin
               </li>
               <li className='text-gray-600 dark:text-gray-400'>
-                <span className='font-medium'>Телефон:</span> +359 888 123 456
+                <span className='font-medium'>Telefon:</span> +49 30 1234567
               </li>
               <li className='text-gray-600 dark:text-gray-400'>
-                <span className='font-medium'>Имейл:</span> info@stroitech.bg
+                <span className='font-medium'>E-Mail:</span> info@bautech.de
               </li>
             </ul>
 
@@ -163,7 +163,7 @@ export default function Footer() {
 
         {/* Авторски права */}
         <div className='mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-gray-600 dark:text-gray-400'>
-          <p>© {new Date().getFullYear()} СтроиТех. Всички права запазени.</p>
+          <p>© {new Date().getFullYear()} BauTech. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

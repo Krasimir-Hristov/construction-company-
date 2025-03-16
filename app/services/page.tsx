@@ -30,9 +30,9 @@ export default function Services() {
   // Списък с услуги
   const services = [
     {
-      title: 'Жилищно строителство',
+      title: 'Wohnungsbau',
       description:
-        'Изграждане на еднофамилни и многофамилни жилищни сгради с високо качество и внимание към детайла. Предлагаме цялостни решения от проектиране до изпълнение.',
+        'Wir bieten umfassende Dienstleistungen für den Bau von Einfamilienhäusern, Mehrfamilienhäusern und Wohnanlagen. Unser Team sorgt für höchste Qualität und Effizienz in jeder Phase des Projekts, von der Planung bis zur Fertigstellung.',
       icon: (
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -52,9 +52,9 @@ export default function Services() {
       ),
     },
     {
-      title: 'Търговско строителство',
+      title: 'Gewerbebau',
       description:
-        'Изграждане на офис сгради, търговски центрове, хотели и други търговски обекти. Фокусираме се върху функционалност, естетика и енергийна ефективност.',
+        'Wir spezialisieren uns auf den Bau von Bürogebäuden, Einzelhandelsgeschäften, Lagerhallen und anderen gewerblichen Einrichtungen. Wir verstehen die spezifischen Anforderungen von Geschäftsräumen und liefern funktionale, ästhetische und kosteneffiziente Lösungen.',
       icon: (
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -75,9 +75,9 @@ export default function Services() {
       ),
     },
     {
-      title: 'Индустриално строителство',
+      title: 'Industriebau',
       description:
-        'Проектиране и изграждане на производствени халета, складове и други индустриални обекти. Осигуряваме решения, съобразени с конкретните нужди на вашия бизнес.',
+        'Planung und Bau von Produktionshallen, Lagerhäusern und anderen Industrieanlagen. Wir bieten Lösungen, die auf die spezifischen Bedürfnisse Ihres Unternehmens zugeschnitten sind.',
       icon: (
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -99,9 +99,9 @@ export default function Services() {
       ),
     },
     {
-      title: 'Реконструкция и ремонти',
+      title: 'Renovierung und Sanierung',
       description:
-        'Цялостни и частични ремонти на жилищни, търговски и индустриални обекти. Модернизиране на съществуващи сгради с фокус върху подобряване на функционалността и енергийната ефективност.',
+        'Umfassende und teilweise Renovierung von Wohn-, Gewerbe- und Industrieobjekten. Modernisierung bestehender Gebäude mit Fokus auf Verbesserung der Funktionalität und Energieeffizienz.',
       icon: (
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -121,9 +121,9 @@ export default function Services() {
       ),
     },
     {
-      title: 'Инфраструктурно строителство',
+      title: 'Infrastrukturbau',
       description:
-        'Изграждане на пътища, мостове, тунели и други инфраструктурни обекти. Използваме съвременни технологии и материали за осигуряване на дълготрайност и безопасност.',
+        'Bau von Straßen, Brücken, Tunneln und anderen Infrastrukturobjekten. Wir verwenden moderne Technologien und Materialien, um Langlebigkeit und Sicherheit zu gewährleisten.',
       icon: (
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -144,9 +144,9 @@ export default function Services() {
       ),
     },
     {
-      title: 'Проектиране и консултации',
+      title: 'Planung und Beratung',
       description:
-        'Предлагаме професионални услуги в областта на архитектурното и инженерното проектиране, както и консултации по всички аспекти на строителния процес.',
+        'Wir bieten professionelle Dienstleistungen im Bereich der Architektur- und Ingenieurplanung sowie Beratung zu allen Aspekten des Bauprozesses.',
       icon: (
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -178,7 +178,7 @@ export default function Services() {
             transition={{ duration: 0.5 }}
             className='text-4xl md:text-5xl font-bold mb-4'
           >
-            Нашите услуги
+            Unsere Leistungen
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -186,8 +186,8 @@ export default function Services() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className='text-xl max-w-3xl mx-auto'
           >
-            Предлагаме пълен спектър от строителни услуги с високо качество и
-            професионализъм
+            Wir bieten ein komplettes Spektrum an Bauleistungen mit hoher
+            Qualität und Professionalität
           </motion.p>
         </div>
       </section>
@@ -233,7 +233,7 @@ export default function Services() {
               transition={{ duration: 0.5 }}
               className='text-3xl font-bold mb-4 text-gray-900 dark:text-white'
             >
-              Нашият процес на работа
+              Unser Arbeitsprozess
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -242,8 +242,8 @@ export default function Services() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className='text-gray-700 dark:text-gray-300 max-w-2xl mx-auto'
             >
-              Следваме структуриран подход към всеки проект, за да гарантираме
-              високо качество и удовлетвореност на клиентите
+              Wir folgen einem strukturierten Ansatz für jedes Projekt, um hohe
+              Qualität und Kundenzufriedenheit zu gewährleisten
             </motion.p>
           </div>
 
@@ -259,11 +259,11 @@ export default function Services() {
                 1
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
-                Консултация
+                Beratung
               </h3>
               <p className='text-gray-700 dark:text-gray-300'>
-                Започваме с детайлна консултация, за да разберем вашите нужди,
-                цели и бюджет.
+                Wir beginnen mit einer detaillierten Beratung, um Ihre
+                Bedürfnisse, Ziele und Ihr Budget zu verstehen.
               </p>
             </motion.div>
 
@@ -278,11 +278,12 @@ export default function Services() {
                 2
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
-                Проектиране
+                Planung
               </h3>
               <p className='text-gray-700 dark:text-gray-300'>
-                Нашият екип от архитекти и инженери разработва детайлен проект,
-                съобразен с вашите изисквания.
+                Unser Team aus Architekten und Ingenieuren entwickelt einen
+                detaillierten Plan, der auf Ihre Anforderungen zugeschnitten
+                ist.
               </p>
             </motion.div>
 
@@ -297,11 +298,11 @@ export default function Services() {
                 3
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
-                Изпълнение
+                Ausführung
               </h3>
               <p className='text-gray-700 dark:text-gray-300'>
-                Реализираме проекта с висококачествени материали и строги
-                стандарти за качество и безопасност.
+                Wir setzen das Projekt mit hochwertigen Materialien und strengen
+                Qualitäts- und Sicherheitsstandards um.
               </p>
             </motion.div>
 
@@ -316,11 +317,11 @@ export default function Services() {
                 4
               </div>
               <h3 className='text-xl font-bold mb-2 text-gray-900 dark:text-white'>
-                Предаване
+                Übergabe
               </h3>
               <p className='text-gray-700 dark:text-gray-300'>
-                След завършване на проекта, извършваме детайлна проверка и
-                предаваме обекта в перфектно състояние.
+                Nach Abschluss des Projekts führen wir eine detaillierte Prüfung
+                durch und übergeben das Objekt in einwandfreiem Zustand.
               </p>
             </motion.div>
           </div>
@@ -338,7 +339,7 @@ export default function Services() {
               transition={{ duration: 0.5 }}
               className='text-3xl font-bold mb-4 text-gray-900 dark:text-white'
             >
-              Нашите проекти
+              Unsere Projekte
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -347,7 +348,7 @@ export default function Services() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className='text-gray-700 dark:text-gray-300 max-w-2xl mx-auto'
             >
-              Разгледайте някои от нашите успешно завършени проекти
+              Sehen Sie einige unserer erfolgreich abgeschlossenen Projekte
             </motion.p>
           </div>
 
@@ -363,14 +364,14 @@ export default function Services() {
               >
                 <Image
                   src='/images/placeholder.jpg'
-                  alt={`Проект ${item}`}
+                  alt={`Projekt ${item}`}
                   fill
                   style={{ objectFit: 'cover' }}
                 />
                 <div className='absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center'>
                   <div className='text-white text-center p-4'>
-                    <h3 className='text-xl font-bold mb-2'>Проект {item}</h3>
-                    <p>Кратко описание на проекта</p>
+                    <h3 className='text-xl font-bold mb-2'>Projekt {item}</h3>
+                    <p>Kurze Beschreibung des Projekts</p>
                   </div>
                 </div>
               </motion.div>

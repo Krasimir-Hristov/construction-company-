@@ -64,7 +64,7 @@ export default function Navbar() {
     >
       <div className='container mx-auto px-4 flex justify-between items-center'>
         <Link href='/' className='text-2xl font-bold text-white'>
-          СтроиТех
+          BauTech
         </Link>
 
         {/* Мобилно меню */}
@@ -103,7 +103,7 @@ export default function Navbar() {
                       : 'text-gray-200'
                   }`}
                 >
-                  Начало
+                  Startseite
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
@@ -115,7 +115,7 @@ export default function Navbar() {
                       : 'text-gray-200'
                   }`}
                 >
-                  За нас
+                  Über uns
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
@@ -127,7 +127,7 @@ export default function Navbar() {
                       : 'text-gray-200'
                   }`}
                 >
-                  Услуги
+                  Leistungen
                 </Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
@@ -139,7 +139,7 @@ export default function Navbar() {
                       : 'text-gray-200'
                   }`}
                 >
-                  Контакти
+                  Kontakt
                 </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
@@ -156,7 +156,7 @@ export default function Navbar() {
                 : 'text-gray-300 hover:text-white'
             }`}
           >
-            Начало
+            Startseite
           </Link>
           <Link
             href='/about'
@@ -166,7 +166,7 @@ export default function Navbar() {
                 : 'text-gray-300 hover:text-white'
             }`}
           >
-            За нас
+            Über uns
           </Link>
           <Link
             href='/services'
@@ -176,7 +176,7 @@ export default function Navbar() {
                 : 'text-gray-300 hover:text-white'
             }`}
           >
-            Услуги
+            Leistungen
           </Link>
           <Link
             href='/contact'
@@ -186,7 +186,7 @@ export default function Navbar() {
                 : 'text-gray-300 hover:text-white'
             }`}
           >
-            Контакти
+            Kontakt
           </Link>
         </div>
 
